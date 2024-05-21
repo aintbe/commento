@@ -8,7 +8,7 @@
   "<strike>strikethrough</strike>": "<strike>tachado</strike>",
   "Add a comment": "Añadir un comentario",
   "Add a Comment": "Añadir un comentario",
-  "Add Comment": "Añadir comentario",
+  "Add": "Añadir comentario",
   "prefix with <pre>&gt;</pre>": "escriba <pre>&gt;</pre> al inicio",
   "surround text with <pre>**two asterisks**</pre>": "encierre el texto entre <pre>**pares de asteriscos**</pre>",
   "surround text with <pre>*asterisks*</pre>": "encierre el texto entre <pre>*asteriscos*</pre>",

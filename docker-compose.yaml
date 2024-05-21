@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+  commento:
+    build: .
+    environment:
+      COMMENTO_ORIGIN: https://commento.koreacentral.cloudapp.azure.com
+      COMMENTO_PORT: 8080
+      COMMENTO_POSTGRES: postgres://postgres:postgres@db:5432/commento?sslmode=disable
+      COMMENTO_FORBID_NEW_OWNERS: true # enable this after your own registration
+      COMMENTO_ENABLE_WILDCARDS: false
+      COMMENTO_GZIP_STATIC: true
+    depends_on:
+      - db
+    ports:
+      - 8080:8080
+
+  caddy:
+    image: caddy:2.8-alpine
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+
+  db:
+    image: postgres:12.5-alpine
+    environment:
+      POSTGRES_DB: commento
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres

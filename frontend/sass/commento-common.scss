@@ -15,7 +15,7 @@ a {
 blockquote {
   margin: 0 0 0 8px;
   padding: 0 0 0 5px;
-  border-left: 2px solid $gray-5;
+  border-left: 3px solid $gray-5;
   color: $gray-6;
 }
 
@@ -25,15 +25,13 @@ blockquote {
   align-items: center;
   text-align: center;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 24px;
   font-size: 14px;
-  padding: 6px;
-  padding-left: 8px;
-  padding-right: 8px;
-  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+  padding: 6px 16px;
+  // box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: .5rem;
   color: #fff;
   margin-left: 5px;
   margin-right: 5px;

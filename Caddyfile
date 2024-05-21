@@ -1,0 +1,3 @@
+commento.koreacentral.cloudapp.azure.com {
+  reverse_proxy http://commento:8080
+}

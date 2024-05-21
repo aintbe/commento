@@ -711,7 +711,7 @@
     if (edit === true) {
       submitButton.innerText = i18n("Save Changes");
     } else {
-      submitButton.innerText = i18n("Add Comment");
+      submitButton.innerText = i18n("Add");
     }
     markdownButton.innerHTML = i18n("<b>M &#8595;</b> &nbsp; Markdown Help?");
 
@@ -833,7 +833,8 @@
     }
 
     if (!isAuthenticated) {
-      append(mainArea, login);
+      // Always disable login button
+      // append(mainArea, login);
     } else {
       remove($(ID_LOGIN));
     }
@@ -976,13 +977,13 @@
 
   function colorGet(name) {
     var colors = [
-      "#396ab1",
-      "#da7c30",
-      "#3e9651",
-      "#cc2529",
-      "#922428",
-      "#6b4c9a",
-      "#535154",
+      "#84e3c8",
+      "#a8e6cf",
+      "#b5e3a1",
+      "#f2a57e",
+      "#ffaaa5",
+      "#ff8b94",
+      "#ff7480",
     ];
 
     var total = 0;
@@ -2435,7 +2436,8 @@
     mainAreaCreate();
     modToolsCreate();
 
-    var footer = footerLoad();
+    // Do not show footer
+    // var footer = footerLoad();
     cssLoad(cdn + "/css/commento.css", loadCssOverride);
 
     selfGet(function() {
@@ -2443,7 +2445,7 @@
         modToolsCreate();
         rootCreate(function() {
           commentsRender();
-          append(root, footer);
+          // append(root, footer);
           loadHash();
           allShow();
           nameWidthFix();
