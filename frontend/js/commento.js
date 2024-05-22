@@ -1219,7 +1219,8 @@
         attrSet(options.childNodes[i], "style", "right: " + (i*32) + "px;");
       }
 
-      append(subtitle, score);
+      // Do not show score on UI
+      // append(subtitle, score);
       append(subtitle, timeago);
 
       if (!mobileView) {
