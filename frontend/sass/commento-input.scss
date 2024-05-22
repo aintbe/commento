@@ -17,7 +17,7 @@ textarea::placeholder {
   color: $gray-6;
   font-size: 20px;
   display: flex;
-  line-height: 110px;
+  line-height: 96px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -83,7 +83,7 @@ textarea {
     font-size: 14px;
     // text-transform: uppercase;
     font-weight: 400;
-    // color: $gray-7;
+    color: #767676;
   }
 
   input[type="checkbox"] + label:before {
