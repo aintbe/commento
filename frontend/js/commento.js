@@ -432,6 +432,7 @@
   }
 
 
+  // eslint-disable-next-line no-unused-vars
   function footerLoad() {
     var footer = create("div");
     var aContainer = create("div");
