@@ -19,7 +19,7 @@
 .commento-option-reply {
   height: 20px;
   width: 20px;
-  @include mask-image('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns"><g transform="matrix(1.7358 0 0 1.7335 4.2642 15.217)"><path d="m10 2.5 1e-6 -4.4421-9 7.4421 9 6.5759-1e-6 -4.6759c6.4194-1.4839 11.739 2.1762 11.739 2.1762s-2.0774-6.5475-11.739-7.0762z" fill="%23abbac4"/></g></svg>');
+  mask-image: url('../images/icon/reply.svg');
   margin: 9px 3px 9px 3px;
 }
 
@@ -34,29 +34,29 @@
 .commento-option-collapse {
   height: 14px;
   width: 14px;
-  @include mask-image('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg enable-background="new 0 0 42 42" version="1.1" viewBox="0 0 42 42" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polygon points="42 20 0 20 0 22 20 22 22 22 42 22" fill="%231e2127"/></svg>');
+  mask-image: url('../images/icon/caret-right.svg');
   margin: 12px 6px 12px 6px;
-  background: $gray-7;
 }
 
 .commento-option-uncollapse {
   height: 14px;
   width: 14px;
-  @include mask-image('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg enable-background="new 0 0 42 42" version="1.1" viewBox="0 0 42 42" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polygon points="42 20 22 20 22 0 20 0 20 20 0 20 0 22 20 22 20 42 22 42 22 22 42 22" fill="%231e2127"/></svg>');
+  mask-image: url('../images/icon/caret-down.svg');
   margin: 12px 6px 12px 6px;
-  background: $gray-7;
 }
 
-.commento-option-upvote,
+.commento-option-upvote {
+  height: 14px;
+  width: 14px;
+  mask-image: url('../images/icon/heart.svg');
+  margin: 12px 6px 12px 6px;
+}
+
 .commento-option-downvote {
   height: 14px;
   width: 14px;
-  @include mask-image('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg enable-background="new 0 0 284.929 284.929" version="1.1" viewBox="0 0 284.93 284.93" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">	<path d="m282.08 195.28-133.05-133.04c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665 0.953-6.567 2.856l-133.04 133.04c-1.906 1.906-2.856 4.093-2.856 6.568 0 2.474 0.953 4.664 2.856 6.566l14.272 14.271c1.903 1.903 4.093 2.854 6.567 2.854s4.664-0.951 6.567-2.854l112.2-112.2 112.21 112.21c1.902 1.903 4.093 2.848 6.563 2.848 2.478 0 4.668-0.951 6.57-2.848l14.274-14.277c1.902-1.902 2.847-4.093 2.847-6.566 1e-3 -2.476-0.944-4.666-2.846-6.569z" fill="%23abbac4"/></svg>');
+  mask-image: url('../images/icon/heart-slash.svg');
   margin: 12px 6px 12px 6px;
-}
-
-.commento-option-downvote {
-  transform: rotate(180deg);
 }
 
 .commento-upvoted {

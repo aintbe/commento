@@ -14,7 +14,7 @@ input[type=text]::placeholder {
 }
 
 textarea::placeholder {
-  color: $gray-6;
+  color: #cacaca;
   font-size: 20px;
   display: flex;
   line-height: 96px;
@@ -67,7 +67,7 @@ textarea {
   float: right;
   background: $primary;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .commento-button-margin {
@@ -76,14 +76,14 @@ textarea {
 
 .commento-anonymous-checkbox-container {
   float: right;
-  margin: 20px 16px;
+  margin: 15px 16px;
 
   input[type="checkbox"] + label {
     padding-left: 24px;
     font-size: 14px;
     // text-transform: uppercase;
     font-weight: 400;
-    color: #767676;
+    opacity: .75;
   }
 
   input[type="checkbox"] + label:before {
@@ -99,6 +99,7 @@ textarea {
   width: -webkit-fill-available;
   text-align: center;
   height: 42px;
+  outline: none;
 }
 
 .commento-guest-details-container {

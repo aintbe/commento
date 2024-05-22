@@ -1216,7 +1216,7 @@
 
       attrSet(options, "style", "width: " + ((options.childNodes.length+1)*32) + "px;");
       for (var i = 0; i < options.childNodes.length; i++) {
-        attrSet(options.childNodes[i], "style", "right: " + (i*32) + "px;");
+        attrSet(options.childNodes[i], "style", "right: " + (16 + i*32) + "px;");
       }
 
       // Do not show score on UI
