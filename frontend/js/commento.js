@@ -430,7 +430,7 @@
 
     append(head, link);
   }
-
+  
 
   // eslint-disable-next-line no-unused-vars
   function footerLoad() {
@@ -1160,7 +1160,7 @@
       }
       timeago.title = comment.creationDate.toLocaleDateString(locale);
 
-      card.style["borderLeft"] = "2px solid " + color;
+      card.style["borderLeft"] = "3px solid " + color;
       if (comment.deleted) {
         name.innerText = i18n("[deleted]");
       } else {
