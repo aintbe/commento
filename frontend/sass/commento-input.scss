@@ -5,7 +5,7 @@ textarea,
 input[type=text] {
   background: #ffffff;
   border: 1px solid rgba(50, 50, 93, .1);
-  border-radius: 3px;
+  border-radius: .375rem;
   color: #525f7f;
 }
 
@@ -47,6 +47,10 @@ textarea {
   .commento-submit-button {
     transform: none;
   }
+
+  textarea {
+    padding: 16px;
+  }
 }
 
 .commento-blurred-textarea {
@@ -61,9 +65,8 @@ textarea {
 
 .commento-submit-button {
   float: right;
-  background: $blue-8;
+  background: #3ec797;
   text-transform: uppercase;
-  // font-size: 12px;
   margin-top: 10px;
 }
 
@@ -84,11 +87,11 @@ textarea {
   }
 
   input[type="checkbox"] + label:before {
-    margin-top: 5px;
+    margin-top: 3px;
   }
 
   input[type="checkbox"] + label:after {
-    margin-top: 3px;
+    margin-top: 2px;
   }
 }
 

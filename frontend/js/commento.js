@@ -1821,7 +1821,7 @@
 
     forgotLink.innerText = i18n("Forgot your password?");
     loginLink.innerText = i18n("Don't have an account? Sign up.");
-    emailSubtitle.innerText = i18n("Login with your email address");
+    emailSubtitle.innerText = i18n("Login to Commento with your email address");
     emailButton.innerText = i18n("Continue");
     oauthSubtitle.innerText = i18n("Proceed with social login");
     ssoSubtitle.innerText = i18n("Proceed with ") + parent.location.host + i18n(" authentication");
