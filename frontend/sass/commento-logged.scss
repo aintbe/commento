@@ -27,6 +27,11 @@
     color: $gray-6;
     margin: 5px 12px;
     font-size: 13px;
+    height: 24px;
+
+    svg {
+      height: 100%;
+    }
   }
 
   .commento-logged-in-as {
